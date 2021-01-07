@@ -26,6 +26,6 @@ e-mail: [pierpaolo.casati@samtrevano.ch](mailto:pierpaolo.casati@samtrevano.ch)
 
 ## Link
 - [Quaderno dei compiti](1_QdC/QdC_Gestione%20DB%20siti%20internet%20via%20%20%20web.docx.pdf)
-- [Abstract](2_Abstract/Abstract - Gestione_Backup_PierpaoloCasati.pdf)
+- [Abstract](2_Abstract/Abstract%20-%20Gestione_Backup_PierpaoloCasati.pdf)
 - [Documentazione](3_Documentazione/Documentazione_CasatiPierpaolo.pdf)
 - [Diari di lavoro](4_Diari)
