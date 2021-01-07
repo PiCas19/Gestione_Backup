@@ -1,0 +1,16 @@
+Host: efof.myd.infomaniak.com
+Date: Tue, 22 Dec 2020 23:07:00 +0100
+
+Connection to efof_db1 with efof_i17caspie
+
+Table structure for table db_link
+Dumping data for table db_link
+Dumped table db_link with 2 row(s)
+
+Table structure for table utenti
+Dumping data for table utenti
+Dumped table utenti with 7 row(s)
+
+Disconnect to efof_db1
+
+The backup was performed in 0.01456093788147 second

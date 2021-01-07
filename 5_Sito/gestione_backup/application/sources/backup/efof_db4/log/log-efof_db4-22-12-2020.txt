@@ -1,0 +1,8 @@
+Host: efof.myd.infomaniak.com
+Date: Tue, 22 Dec 2020 23:07:00 +0100
+
+Connection to efof_db4 with efof_i17caspie1
+
+Disconnect to efof_db4
+
+The backup was performed in 0.0083098411560059 second

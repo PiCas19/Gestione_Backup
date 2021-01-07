@@ -1,0 +1,207 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background:#f0fbff;
+}
+
+/* 
+ * stile del contenitore che contiene 
+ * il contenitore sinistro e contenitore destro.
+ */
+.container{
+  position: absolute;
+  max-width: 800px;
+  height: 500px;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* 
+ * Stile del contenitore destro  
+ * nel quale c'é il contenitore che 
+ * contiene la descrizione dell'applicativo.
+ */
+.myRightCtn {
+  position: relative;
+  /* Crea un immagine (colore sfondo del contenitore) con una sfumatura tra il colore rosa e viola. */
+  background-image: linear-gradient(45deg, #4E7193, #2E5377);
+  border-radius: 25px;
+  height: 100%;
+  padding: 25px;
+  color: rgb(192,192,192);
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* 
+ * Stile del contenitore sinistro 
+ * nel quale c'é il contenitore che 
+ * contiene il form login.
+ */
+.myLeftCtn{
+  position: relative;
+  background: #fff;
+  border-radius: 25px;
+  height: 100%;
+  padding: 25px;
+  padding-left: 50px;
+}
+
+
+/*
+ * Stile del h1 del form login.
+ */
+.myForm h1{
+  color: #5489BD;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/*
+ * Il contenitore della classe 
+ * container è suddiviso in righe.
+ */
+.row{
+  height: 100%;
+}
+
+/*
+ * Stile del contenitore principale che contiene 
+ * il contenitore sinistro e destro.
+ */
+.myCard{
+  position: relative;;
+  background: #fff;
+  height: 100%;
+  border-radius: 25px;
+  /* Permette di creare le ombreggiatura attorno al contenitore principale */
+  -webkit-box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.7);
+}
+
+
+/* 
+ * Stile del h1 della descrizione 
+ * dell'applicativo.
+ */
+.box h1{
+  color: #fff;
+  font-size: 44px;
+}
+
+/* 
+ * Stile del contenitore nel 
+ * quale c'é la descrizione.
+ */
+.box {
+  position: relative;
+  margin: 20px;
+  margin-bottom: 100px;
+}
+
+/* 
+ * Stile dei tag input del login (username + password).
+ */
+.myLeftCtn .myInput{
+  width: 230px;
+  border-radius: 25px;
+  padding: 10px;
+  padding-left: 50px;
+  border: none;
+  /* Permette di creare le ombreggiature di colore nero attorno ai tag input */
+  -webkit-box-shadow: 0px 10px 49px -14px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0px 10px 49px -14px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 10px 49px -14px rgba(0, 0, 0, 0.7);
+}
+
+/* 
+ * Stile del contenitore nel quale 
+ * si trova il form login.
+ */
+.myForm{
+  position: relative;
+  margin-top: 50px;
+}
+
+/*
+ * Stile del button submit. 
+ */
+.myForm .butt{
+  /* Crea uno sfondo(colore sfondo del button submit) con una 
+  sfumatura tra il colore viola chiaro e viola scuro. */
+  background:  linear-gradient(45deg,#4E7193, #2E5377);
+  color: #fff;
+  width:230px;
+  border:none;
+  border-radius: 25px;
+  padding: 10px;
+  /* Permette di creare le ombreggiature di colore nero attorno al button submit */
+  -webkit-box-shadow: 0px 10px 41px -11px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0px 10px 41px -11px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 10px 41px -11px rgba(0, 0, 0, 0.7);
+
+}
+
+/*
+ * Stile del button submit 
+ * quando passo sopra con il mouse.
+ */
+.myForm .butt:hover{
+  /* Crea uno sfondo(colore sfondo del button submit) con una 
+  sfumatura tra il colore viola chiaro e viola scuro (viola più chari di prima). */
+  background: linear-gradient(45deg,#5489BD,#366CA0);
+  outline: none;
+}
+
+/*
+ * Permette di togliere l'outline
+ */
+ :hover, :active, :focus{
+  outline: 0;
+  outline: none;
+}
+
+
+/*
+ * Stile delle icone
+ */
+.myLeftCtn .fas{
+  position: relative;
+  color:#366CA0;
+  left: 36px;
+}
+
+/*
+ * Stile del button learn more
+ */
+.butt_out{
+  background: transparent;
+  color: #fff;
+  width: 120px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  padding: 10px;
+  /* Permette di creare le ombreggiature di colore nero attorno al button learn more */
+  -webkit-box-shadow: 0px 10px 49px -14px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0px 10px 49px -14px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 10px 49px -14px rgba(0, 0, 0, 0.7);
+
+}
+
+/*
+ * Stile del button learn more quando passo sopra.
+ */
+.butt_out:hover{
+  border:2px solid #5489BD;
+}

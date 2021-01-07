@@ -1,0 +1,107 @@
+/* Stile di tutte le tabelle dell'applicativo*/
+#responsive, #utente, #backup {
+	width: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+}
+
+/* Stile di tutti i th (intestazioni) delle tabelle*/
+#responsive th, #utente th, #backup th { 
+	text-align: center;
+	border: 1px solid #ddd;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	background-color: #333;
+	color: white;
+}
+
+/* Stile dei td delle tabelle */
+#responsive td #utente td, #backup td { 
+	text-align: center;
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+
+/* Colore delle caselle pari*/
+#responsive tr:nth-child(even), #utente tr:nth-child(even), #backup tr:nth-child(even){
+	background-color: #f2f2f2;
+}
+
+/* Colore delle caselle dispari */
+#responsive tr:nth-child(odd), #utente tr:nth-child(odd), #backup tr:nth-child(odd){
+	background-color: #ffffff;
+}
+
+/** 
+ * Cambio il colore di sfondo dei tr (ogni riga della tabella), 
+ * quando passo sopra con il mouse 
+ */
+#responsive tr:hover ,#utente tr:hover,#backup tr:hover {
+	background-color: #ddd;
+}
+
+
+
+
+/* Stile sui schermi con larghezze massime di 760px (schermi di mobile)*/
+@media screen and (max-width: 760px) {
+	
+	/* Forza la tabella a non essere più come le tabelle (nasconde la tabella versione desktop) */
+	#backup  thead, #utente thead, #responsive thead, tbody, th, td, tr {
+	  display: block;
+	}
+	
+	#backup tbody td, #utente tbody td, #responsive tbody td{
+		word-wrap: break-word;
+	}
+	
+	/* Nascondi l'intestazioni della tabella */
+	#backup thead tr, #utente thead tr, #responsive thead tr { 
+	  display: none;
+	}
+	/* Stile di ogni tr*/
+	#backup  tr, #utente tr, #responsive tr { 	
+		border: 1px solid #ccc;
+		padding-bottom: 4px;
+	}
+		 
+	/* Crea una riga td*/
+	#backup td, #utente td, #responsive td {
+	  border: none;
+	  position: relative;
+	  padding-left: 50%;
+	}
+	
+	/* Permette di rendere la nuova riga td l'intestazione di una tabella */
+	#backup td:before, #utente td:before, #responsive td:before {
+	  position: absolute;
+	  top: 6px;
+	  left: 6px;
+	  width: 45%;
+	  padding-right: 5%;
+	  white-space: nowrap;
+	}
+	
+	/* Intestazione della tabella della pagina gestione in modalità mobile*/
+	#responsive td:nth-of-type(1):before { content: "Database"; font-weight: bold; }
+	#responsive td:nth-of-type(2):before { content: "Username"; font-weight: bold }
+	#responsive td:nth-of-type(3):before { content: "Modifica"; font-weight: bold }
+	#responsive td:nth-of-type(4):before { content: "Elimina"; font-weight: bold }
+	#responsive td:nth-of-type(5):before { content: "Backup"; font-weight: bold}
+	#responsive td:nth-of-type(6):before { content: "Ultimo backup"; font-weight: bold}
+	
+	/* Intestazione della tabella della pagina utente in modalità mobile*/
+	#utente td:nth-of-type(1):before { content: "Nome"; font-weight: bold; }
+	#utente td:nth-of-type(2):before { content: "Cognome"; font-weight: bold }
+	#utente td:nth-of-type(3):before { content: "Email"; font-weight: bold }
+	#utente td:nth-of-type(4):before { content: "Tipo"; font-weight: bold }
+	#utente td:nth-of-type(5):before { content: "Elimina"; font-weight: bold }
+	
+	/* Intestazione della tabella della pagina visualizza_backup in modalità mobile*/
+	#backup td:nth-of-type(1):before { content: "Nome database"; font-weight: bold; }
+	#backup td:nth-of-type(2):before { content: "Backup"; font-weight: bold }
+	#backup td:nth-of-type(3):before { content: "Log"; font-weight: bold }
+	#backup td:nth-of-type(4):before { content: "Stato"; font-weight: bold }
+	#backup td:nth-of-type(5):before { content: "Data Backup"; font-weight: bold }
+	
+}
